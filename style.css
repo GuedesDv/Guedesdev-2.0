@@ -1,0 +1,222 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Warang+Citi&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans Warang Citi", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+    background-image: url('BACKGROUND.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title { /* Fundo semitransparente */
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    border-bottom: 3px solid #ddd;
+    justify-content: space-between;
+}
+
+.sections-container {
+    flex: 1;
+    display: flex;
+}
+
+.section {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.0); /* Fundo semitransparente para melhor legibilidade */
+}
+
+.section:last-child {
+    border-right: none;
+}
+
+
+
+.floater {
+    background-color: rgba(244, 244, 244, 0.5); /* Fundo semitransparente */
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-right: 80px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    padding: 20px;
+    align-items: center;
+    border-radius: 10px; /* Permite que os itens se movam para a linha seguinte em telas menores */
+}
+.copyright-c {
+    text-align: center; /* Centraliza o texto */
+    padding: 10px;
+    justify-content: center; /* Adiciona um padding ao redor da div */
+  }
+  
+  .copyright-c p {
+    margin: 3cqmax 0; /* Adiciona espaçamento entre as linhas de texto */
+    font-size: 1rem; /* Ajusta o tamanho da fonte, se necessário */
+    line-height: 1.5; /* Ajusta a altura da linha para dar mais espaço entre as linhas de texto */
+  }
+  
+  .copyright-c p br {
+    margin-bottom: 20px; /* Espaçamento adicional para quebras de linha */
+  }
+
+.floater > div {
+    border-radius: 10px;
+    flex: 1;
+    padding: 5px 5px;
+    display: flex;
+    width: 350px; /* Centraliza horizontalmente */
+}
+
+.floater .social-links {
+    display: flex;
+    flex-direction: row; /* Itens em linha */
+    align-items: center;
+    font-size: 2rem;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.floater .social-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 10px 20px; /* Espaçamento entre os links */
+}
+
+.copyright {
+    padding: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Itens dispostos verticalmente */
+    align-items: center;
+    border-radius: 3px;
+    
+}
+
+section img {
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    top:20vh;
+    left: -150px;
+    width: 250px;
+    object-fit: cover;
+    border-color: #000000;
+    border: 2px solid;
+    z-index: 1;
+    border: 1px solid black;
+    background-color: rgba(244, 244, 244, 0.8);
+}
+
+section .text-main{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh;
+    width: 70vh;
+
+}
+
+
+.text-main {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    height: auto; /* Ajusta a altura automaticamente conforme o conteúdo */
+    background-color: rgba(244, 244, 244, 0.8); /* Cor de fundo */
+    border: 1px solid #0e0e0e; /* Borda */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    padding: 20px; /* Adiciona um pouco de espaçamento interno */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra */
+    text-align: center; /* Centraliza o texto */
+    font-size: 1.1rem;
+    width: 40vh; /* Limita a largura do texto */
+}
+  /* Logo e links */
+  .copyright-b {
+    display: flex;
+    justify-content: center; /* Centraliza todo o conteúdo horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+  }
+  
+  /* Estilo da barra de navegação */
+  nav {
+    display: flex;
+    justify-content: center;  /* Centraliza os itens de navegação */
+    align-items: center;/* Adiciona espaçamento interno para evitar o "subir" */
+    min-height: 80px; /* Define uma altura mínima para o nav */
+  }
+  
+  /* Remover decoração dos links e estilização básica */
+  nav a {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    font-size: 18px;
+  }
+  
+  /* Estilo da lista ul e li */
+  ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 10px;/* Distribui espaço entre os itens */
+    width: 100%; /* Define uma largura total para o menu */
+    max-width: 900px; /* Limite de largura para o menu em telas maiores */
+  }
+  
+  ul li {
+    margin: 0 10px; /* Espaçamento horizontal entre os itens */
+  }
+  
+  /* Efeito hover nos links */
+  ul li a:hover {
+    color: #ff6347; /* Cor ao passar o mouse */
+  }
+  
+  /* Estilo da logo (se houver) */
+  .nav-bar {
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  /* Estilo para telas menores (responsividade) */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      padding: 10px 0; /* Ajusta o padding para telas menores */
+    }
+  
+    ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    ul li {
+      margin: 10px 0; /* Mais espaçamento entre os itens em telas menores */
+    }
+  }
